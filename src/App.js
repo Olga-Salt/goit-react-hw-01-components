@@ -3,7 +3,8 @@ import SocialPofile from './components/social-profile/SocialProfile';
 import userProf from './components/social-profile/user.json';
 import data from './components/statistics/data.json';
 import Statistics from './components/statistics/Statistics';
-// import PageTitle from './components/statistics/PageTitle';
+import friends from './components/friendList/friends.json';
+import FriendList from './components/friendList/FriendList';
 
 export default function App() {
   return (
@@ -18,8 +19,10 @@ export default function App() {
         />
       </div>
       <div>
-        {/* <PageTitle title="Upload stats" /> */}
         <Statistics title="Upload stats" stats={data} />
+      </div>
+      <div>
+        <FriendList friends={friends} />
       </div>
     </div>
   );
