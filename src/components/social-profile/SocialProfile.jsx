@@ -1,8 +1,14 @@
 import PropTypes from 'prop-types';
-import imgDefault from 'logo.svg'
+import imgDefault from 'logo.svg';
 
 export default function SocialPofile(props) {
-  const { username, tag, location, avatar = imgDefault, stats: {followers,views,likes} } = props;
+  const {
+    username,
+    tag,
+    location,
+    avatar = imgDefault,
+    stats: { followers, views, likes },
+  } = props;
 
   return (
     <div className="profile">
@@ -32,9 +38,9 @@ export default function SocialPofile(props) {
 }
 
 SocialPofile.propTypes = {
-    avatar: PropTypes.string,
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    stats: PropTypes.object,
-}
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+};

@@ -1,10 +1,15 @@
 import './App.css';
 import SocialPofile from './components/social-profile/SocialProfile';
 import userProf from './components/social-profile/user.json';
+
 import data from './components/statistics/data.json';
 import Statistics from './components/statistics/Statistics';
+
 import friends from './components/friendList/friends.json';
 import FriendList from './components/friendList/FriendList';
+
+import TransactionHistory from './components/transactionHistory/TransactionHistory';
+import transactions from './components/transactionHistory/transactions.json';
 
 export default function App() {
   return (
@@ -23,6 +28,9 @@ export default function App() {
       </div>
       <div>
         <FriendList friends={friends} />
+      </div>
+      <div>
+        <TransactionHistory items={transactions} />
       </div>
     </div>
   );
