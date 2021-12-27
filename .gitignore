@@ -114,6 +114,8 @@ dist
 
 # production
 /build
+.vscode
+.husky
 
 # misc
 .DS_Store

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import imgDefault from 'logo.svg';
+import './SocialPofile.css';
 
 export default function SocialPofile(props) {
   const {
@@ -19,7 +20,7 @@ export default function SocialPofile(props) {
         <p className="location">{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className="stats list">
         <li>
           <span className="label">Followers</span>
           <span className="quantity">{followers}</span>

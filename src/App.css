@@ -1,5 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
 .App {
   text-align: center;
+  background-color: #e7ecf2;
+  padding: 20px 15px;
 }
 
 .App-logo {

@@ -13,10 +13,6 @@ export default function TransactionHistoryTableRow({
   );
 }
 
-// TransactionHistoryTableRow.propTypes = {
-//     item: PropTypes.object.isRequired
-// }
-
 TransactionHistoryTableRow.propTypes = {
   item: PropTypes.shape({
     type: PropTypes.string.isRequired,
