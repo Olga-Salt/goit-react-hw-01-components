@@ -20,7 +20,7 @@ export default function SocialPofile(props) {
         <p className="location">{location}</p>
       </div>
 
-      <ul className="stats list">
+      <ul className="stats">
         <li>
           <span className="label">Followers</span>
           <span className="quantity">{followers}</span>

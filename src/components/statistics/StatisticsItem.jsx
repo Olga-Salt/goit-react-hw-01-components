@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import getRandomHexColor from 'helpers/GetPandomColor';
 
 export default function StatisticsItem({ stat: { label, percentage } }) {
   return (
-    <li className="item">
+    <li className="item" style={{ backgroundColor: getRandomHexColor() }}>
       <span className="label">{label}</span>
       <span className="percentage">{percentage}</span>
     </li>

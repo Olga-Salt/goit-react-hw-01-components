@@ -4,12 +4,13 @@ import userProf from './components/social-profile/user.json';
 
 import data from './components/statistics/data.json';
 import Statistics from './components/statistics/Statistics';
+import styles from './components/statistics/Statistics.module.css';
 
 import friends from './components/friendList/friends.json';
 import FriendList from './components/friendList/FriendList';
 
-import TransactionHistory from './components/transactionHistory/TransactionHistory';
 import transactions from './components/transactionHistory/transactions.json';
+import TransactionHistory from './components/transactionHistory/TransactionHistory';
 
 export default function App() {
   return (
@@ -23,7 +24,7 @@ export default function App() {
           stats={userProf.stats}
         />
       </div>
-      <div>
+      <div className={styles.statisticsWrapper}>
         <Statistics title="Upload stats" stats={data} />
         <Statistics stats={data} />
       </div>
