@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
+import { Row, Type, Currency } from './Transaction.styled';
 
 export default function TransactionHistoryTableRow({
   item: { type, amount, currency },
 }) {
-  console.log(type, amount, currency);
   return (
-    <tr>
-      <td>{type}</td>
+    <Row>
+      <Type>{type}</Type>
       <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+      <Currency>{currency}</Currency>
+    </Row>
   );
 }
 

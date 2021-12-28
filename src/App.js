@@ -1,4 +1,3 @@
-import './App.css';
 import SocialPofile from './components/social-profile/SocialProfile';
 import userProf from './components/social-profile/user.json';
 
@@ -8,6 +7,7 @@ import styles from './components/statistics/Statistics.module.css';
 
 import friends from './components/friendList/friends.json';
 import FriendList from './components/friendList/FriendList';
+import { FriendListWrap } from './components/friendList/FriendList.styled';
 
 import transactions from './components/transactionHistory/transactions.json';
 import TransactionHistory from './components/transactionHistory/TransactionHistory';
@@ -28,35 +28,12 @@ export default function App() {
         <Statistics title="Upload stats" stats={data} />
         <Statistics stats={data} />
       </div>
-      <div>
+      <FriendListWrap>
         <FriendList friends={friends} />
-      </div>
+      </FriendListWrap>
       <div>
         <TransactionHistory items={transactions} />
       </div>
     </div>
   );
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
